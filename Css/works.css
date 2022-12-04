@@ -1,0 +1,300 @@
+/*==============================================================================================================================
+|                                                                                                                               |
+|                                               WORKS                                                                           |
+|                                                                                                                               |
+===============================================================================================================================*/
+body{
+    overflow-x: hidden;
+}
+.works-top{
+    background: url("../images/bg-img/earth-g6a2ad2d7e_1920.jpg");
+
+}
+.works{
+    margin-top: 3rem;
+}
+.works-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+/* .works-left{
+    margin-top: 4rem;
+} */
+
+.works-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.works_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.work_card{
+    background: transparent;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.work_card:hover{
+    background: rgba(0, 98, 255, 0.67);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.2);
+    transition: all 400ms ease-in-out;
+}
+
+.work_icon{
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: 2px solid #3145f8;
+    transition: var(--transition);
+}
+
+.work_icon img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.work_card:hover
+.work_icon{
+    border: 2px solid #ff7878;
+}
+
+.work_card:nth-child(2) 
+.work_icon {
+    background: transparent;
+}
+
+.work_card:nth-child(3) 
+.work_icon {
+    background: transparent;
+}
+
+.work_card p{
+    margin-top: 1rem;
+}
+
+/**==============================================================================================================================
+|                                                                                                                               |
+|                                              SUB-WORK SECTION                                                                 |
+|                                                                                                                               |
+===============================================================================================================================*/
+.NTIT,
+.virtual{
+    background-color: #fff;
+}
+
+.NTIT-top{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.NTIT-left h2{
+    text-transform: uppercase;
+    color: var(--color-bg);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    word-spacing: .75rem;
+    text-shadow: 5px 2px 5px #000;
+    margin-top: 3rem;
+}
+
+.NTIT-right p{
+    color: #272727;
+}
+.NTIT-bottom{
+    margin-top: 8rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+    display: none;
+}
+
+.NTIT_cards{
+    background: var(--color-bg);
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #272727;
+    transition: var(--transition);
+}
+
+.NTIT_cards:hover{
+    box-shadow: 0 3rem 3rem #3e3e3e64;
+}
+.heading h2{
+    padding: 1rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.NTIT_cards >p{
+    padding: 0rem auto;
+    color: #fff;
+}
+
+.bottom-display{
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+}
+.bottom-display span{
+    color: #000;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.bottom-display span:hover{
+    color: #ffb32f;
+    font-size: 130%;
+    font-weight: 900;
+}
+.hide-content{
+    display: none;
+}
+.storage{
+    background: url("../images/bg-img/ian-battaglia-9drS5E_Rguc-unsplash.jpg");
+}
+
+.storage-bottom .NTIT_cards:hover{
+    box-shadow: 0 2rem 2rem #ffffff8b;
+}
+
+.storage .NTIT-top{
+    background: rgba(0,0,0,0.3);
+    padding: 2rem;
+}
+
+
+.storage-bottom, 
+.virtual-bottom{
+    margin-top: 8rem;
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+
+.storage-bottom .NTIT_cards{
+    background: rgba(0, 98, 255, 0.2);
+    box-shadow: 4px 2px 4px #272727;
+    border: 1px solid#fff;
+}
+.storage-hide-content,
+.virtual-hide-content{
+    display: none;
+}
+
+/*=====================================================================
+|                                                                      |
+|              MEDIA QUERIES                                           |
+|                                                                      |
+======================================================================*/
+
+@media screen and (min-width:1024px) {
+
+    .works{
+        margin-top: 2rem;
+    }
+
+    .works-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:1024px) {
+    .works{
+        margin-top: 2rem;
+    }
+    .works-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .works-left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .team_container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+
+    .team_member{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:900px ){
+
+    .works_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        overflow-x: hidden;
+    }
+
+    .work_card{
+        padding: 1rem;
+        margin: 0;
+    }
+    .work_card h3{
+        font-size: 1.5rem;
+    }
+
+    .NTIT-left h2{
+        font-size: 1.3rem;
+    }
+
+    .NTIT-bottom,
+    .storage-bottom,
+    .virtual-bottom{
+        grid-template-columns: 1fr ;
+        gap: 2rem;
+        /* display: block; */
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+    .works_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        overflow-x: hidden;
+    }
+
+    .work_card{
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .NTIT-top{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .NTIT-left h2{
+        font-size: 1.75rem;
+    }
+
+    .NTIT-right{
+        word-spacing: normal;
+        font-size: 0.75rem;
+    }
+
+    .NTIT-bottom,
+    .storage-bottom,
+    .virtual-bottom{
+        grid-template-columns: 1fr ;
+        gap: 2rem;
+        /* display: block; */
+    }
+    
+}
